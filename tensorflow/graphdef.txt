@@ -118,7 +118,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 4188302
+      i: 1493881
     }
   }
 }
@@ -1776,7 +1776,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 4073692
+      i: 5784419
     }
   }
 }
@@ -1999,7 +1999,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 1419513
+      i: 2513788
     }
   }
 }
@@ -3698,7 +3698,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 3396094
+      i: 5763286
     }
   }
 }
@@ -3921,7 +3921,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 9641269
+      i: 2834399
     }
   }
 }
@@ -5739,7 +5739,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 6131835
+      i: 4426750
     }
   }
 }
@@ -5955,7 +5955,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 1480101
+      i: 594663
     }
   }
 }
@@ -6361,7 +6361,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 9109818
+      i: 5662469
     }
   }
 }
@@ -8001,7 +8001,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 3654348
+      i: 3470506
     }
   }
 }
@@ -8224,7 +8224,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 778250
+      i: 9539765
     }
   }
 }
@@ -9923,7 +9923,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 6629509
+      i: 1165940
     }
   }
 }
@@ -10146,7 +10146,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 2833522
+      i: 3063720
     }
   }
 }
@@ -11964,7 +11964,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 3424708
+      i: 6718318
     }
   }
 }
@@ -12180,7 +12180,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 3009199
+      i: 1710114
     }
   }
 }
@@ -12463,417 +12463,6 @@ node {
     key: "T"
     value {
       type: DT_FLOAT
-    }
-  }
-}
-node {
-  name: "Placeholder"
-  op: "Placeholder"
-  attr {
-    key: "dtype"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        dim {
-          size: 3
-        }
-        dim {
-          size: 3
-        }
-        dim {
-          size: 1
-        }
-        dim {
-          size: 32
-        }
-      }
-    }
-  }
-}
-node {
-  name: "Assign"
-  op: "Assign"
-  input: "conv2d_2/kernel"
-  input: "Placeholder"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@conv2d_2/kernel"
-      }
-    }
-  }
-  attr {
-    key: "use_locking"
-    value {
-      b: false
-    }
-  }
-  attr {
-    key: "validate_shape"
-    value {
-      b: true
-    }
-  }
-}
-node {
-  name: "Placeholder_1"
-  op: "Placeholder"
-  attr {
-    key: "dtype"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        dim {
-          size: 32
-        }
-      }
-    }
-  }
-}
-node {
-  name: "Assign_1"
-  op: "Assign"
-  input: "conv2d_2/bias"
-  input: "Placeholder_1"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@conv2d_2/bias"
-      }
-    }
-  }
-  attr {
-    key: "use_locking"
-    value {
-      b: false
-    }
-  }
-  attr {
-    key: "validate_shape"
-    value {
-      b: true
-    }
-  }
-}
-node {
-  name: "Placeholder_2"
-  op: "Placeholder"
-  attr {
-    key: "dtype"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        dim {
-          size: 32
-        }
-      }
-    }
-  }
-}
-node {
-  name: "Assign_2"
-  op: "Assign"
-  input: "batch_normalization_4/gamma"
-  input: "Placeholder_2"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@batch_normalization_4/gamma"
-      }
-    }
-  }
-  attr {
-    key: "use_locking"
-    value {
-      b: false
-    }
-  }
-  attr {
-    key: "validate_shape"
-    value {
-      b: true
-    }
-  }
-}
-node {
-  name: "Placeholder_3"
-  op: "Placeholder"
-  attr {
-    key: "dtype"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        dim {
-          size: 32
-        }
-      }
-    }
-  }
-}
-node {
-  name: "Assign_3"
-  op: "Assign"
-  input: "batch_normalization_4/beta"
-  input: "Placeholder_3"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@batch_normalization_4/beta"
-      }
-    }
-  }
-  attr {
-    key: "use_locking"
-    value {
-      b: false
-    }
-  }
-  attr {
-    key: "validate_shape"
-    value {
-      b: true
-    }
-  }
-}
-node {
-  name: "Placeholder_4"
-  op: "Placeholder"
-  attr {
-    key: "dtype"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        dim {
-          size: 32
-        }
-      }
-    }
-  }
-}
-node {
-  name: "Assign_4"
-  op: "Assign"
-  input: "batch_normalization_4/moving_mean"
-  input: "Placeholder_4"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@batch_normalization_4/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "use_locking"
-    value {
-      b: false
-    }
-  }
-  attr {
-    key: "validate_shape"
-    value {
-      b: true
-    }
-  }
-}
-node {
-  name: "Placeholder_5"
-  op: "Placeholder"
-  attr {
-    key: "dtype"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        dim {
-          size: 32
-        }
-      }
-    }
-  }
-}
-node {
-  name: "Assign_5"
-  op: "Assign"
-  input: "batch_normalization_4/moving_variance"
-  input: "Placeholder_5"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@batch_normalization_4/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "use_locking"
-    value {
-      b: false
-    }
-  }
-  attr {
-    key: "validate_shape"
-    value {
-      b: true
-    }
-  }
-}
-node {
-  name: "Placeholder_6"
-  op: "Placeholder"
-  attr {
-    key: "dtype"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        dim {
-          size: 3
-        }
-        dim {
-          size: 3
-        }
-        dim {
-          size: 32
-        }
-        dim {
-          size: 1
-        }
-      }
-    }
-  }
-}
-node {
-  name: "Assign_6"
-  op: "Assign"
-  input: "separable_conv2d_3/depthwise_kernel"
-  input: "Placeholder_6"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@separable_conv2d_3/depthwise_kernel"
-      }
-    }
-  }
-  attr {
-    key: "use_locking"
-    value {
-      b: false
-    }
-  }
-  attr {
-    key: "validate_shape"
-    value {
-      b: true
-    }
-  }
-}
-node {
-  name: "Placeholder_7"
-  op: "Placeholder"
-  attr {
-    key: "dtype"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        dim {
-          size: 1
-        }
-        dim {
-          size: 1
-        }
-        dim {
-          size: 32
-        }
-        dim {
-          size: 64
-        }
-      }
     }
   }
 }
@@ -43581,7 +43170,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 8512197
+      i: 6064117
     }
   }
 }
@@ -45221,7 +44810,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 3611890
+      i: 6355445
     }
   }
 }
@@ -45444,7 +45033,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 5870848
+      i: 6526375
     }
   }
 }
@@ -47143,7 +46732,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 592207
+      i: 5684454
     }
   }
 }
@@ -47366,7 +46955,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 2129101
+      i: 2297558
     }
   }
 }
@@ -49184,7 +48773,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 5959127
+      i: 5380807
     }
   }
 }
@@ -49400,7 +48989,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 7141064
+      i: 8541770
     }
   }
 }
@@ -49687,7 +49276,7 @@ node {
   }
 }
 node {
-  name: "Placeholder_8"
+  name: "Placeholder"
   op: "Placeholder"
   attr {
     key: "dtype"
@@ -49716,10 +49305,10 @@ node {
   }
 }
 node {
-  name: "Assign_8"
+  name: "Assign"
   op: "Assign"
   input: "conv2d_3/kernel"
-  input: "Placeholder_8"
+  input: "Placeholder"
   attr {
     key: "T"
     value {
@@ -49731,6 +49320,440 @@ node {
     value {
       list {
         s: "loc:@conv2d_3/kernel"
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  attr {
+    key: "validate_shape"
+    value {
+      b: true
+    }
+  }
+}
+node {
+  name: "Placeholder_1"
+  op: "Placeholder"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+node {
+  name: "Assign_1"
+  op: "Assign"
+  input: "conv2d_3/bias"
+  input: "Placeholder_1"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@conv2d_3/bias"
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  attr {
+    key: "validate_shape"
+    value {
+      b: true
+    }
+  }
+}
+node {
+  name: "Placeholder_2"
+  op: "Placeholder"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+node {
+  name: "Assign_2"
+  op: "Assign"
+  input: "batch_normalization_7/gamma"
+  input: "Placeholder_2"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@batch_normalization_7/gamma"
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  attr {
+    key: "validate_shape"
+    value {
+      b: true
+    }
+  }
+}
+node {
+  name: "Placeholder_3"
+  op: "Placeholder"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+node {
+  name: "Assign_3"
+  op: "Assign"
+  input: "batch_normalization_7/beta"
+  input: "Placeholder_3"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@batch_normalization_7/beta"
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  attr {
+    key: "validate_shape"
+    value {
+      b: true
+    }
+  }
+}
+node {
+  name: "Placeholder_4"
+  op: "Placeholder"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+node {
+  name: "Assign_4"
+  op: "Assign"
+  input: "batch_normalization_7/moving_mean"
+  input: "Placeholder_4"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@batch_normalization_7/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  attr {
+    key: "validate_shape"
+    value {
+      b: true
+    }
+  }
+}
+node {
+  name: "Placeholder_5"
+  op: "Placeholder"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+node {
+  name: "Assign_5"
+  op: "Assign"
+  input: "batch_normalization_7/moving_variance"
+  input: "Placeholder_5"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@batch_normalization_7/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  attr {
+    key: "validate_shape"
+    value {
+      b: true
+    }
+  }
+}
+node {
+  name: "Placeholder_6"
+  op: "Placeholder"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 3
+        }
+        dim {
+          size: 3
+        }
+        dim {
+          size: 32
+        }
+        dim {
+          size: 1
+        }
+      }
+    }
+  }
+}
+node {
+  name: "Assign_6"
+  op: "Assign"
+  input: "separable_conv2d_5/depthwise_kernel"
+  input: "Placeholder_6"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@separable_conv2d_5/depthwise_kernel"
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  attr {
+    key: "validate_shape"
+    value {
+      b: true
+    }
+  }
+}
+node {
+  name: "Placeholder_7"
+  op: "Placeholder"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 1
+        }
+        dim {
+          size: 1
+        }
+        dim {
+          size: 32
+        }
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+node {
+  name: "Assign_7"
+  op: "Assign"
+  input: "separable_conv2d_5/pointwise_kernel"
+  input: "Placeholder_7"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@separable_conv2d_5/pointwise_kernel"
+      }
+    }
+  }
+  attr {
+    key: "use_locking"
+    value {
+      b: false
+    }
+  }
+  attr {
+    key: "validate_shape"
+    value {
+      b: true
+    }
+  }
+}
+node {
+  name: "Placeholder_8"
+  op: "Placeholder"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+node {
+  name: "Assign_8"
+  op: "Assign"
+  input: "separable_conv2d_5/bias"
+  input: "Placeholder_8"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@separable_conv2d_5/bias"
       }
     }
   }
@@ -49770,7 +49793,7 @@ node {
 node {
   name: "Assign_9"
   op: "Assign"
-  input: "conv2d_3/bias"
+  input: "batch_normalization_8/gamma"
   input: "Placeholder_9"
   attr {
     key: "T"
@@ -49782,7 +49805,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@conv2d_3/bias"
+        s: "loc:@batch_normalization_8/gamma"
       }
     }
   }
@@ -49822,7 +49845,7 @@ node {
 node {
   name: "Assign_10"
   op: "Assign"
-  input: "batch_normalization_7/gamma"
+  input: "batch_normalization_8/beta"
   input: "Placeholder_10"
   attr {
     key: "T"
@@ -49834,7 +49857,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@batch_normalization_7/gamma"
+        s: "loc:@batch_normalization_8/beta"
       }
     }
   }
@@ -49874,7 +49897,7 @@ node {
 node {
   name: "Assign_11"
   op: "Assign"
-  input: "batch_normalization_7/beta"
+  input: "batch_normalization_8/moving_mean"
   input: "Placeholder_11"
   attr {
     key: "T"
@@ -49886,7 +49909,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@batch_normalization_7/beta"
+        s: "loc:@batch_normalization_8/moving_mean"
       }
     }
   }
@@ -49926,7 +49949,7 @@ node {
 node {
   name: "Assign_12"
   op: "Assign"
-  input: "batch_normalization_7/moving_mean"
+  input: "batch_normalization_8/moving_variance"
   input: "Placeholder_12"
   attr {
     key: "T"
@@ -49938,7 +49961,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@batch_normalization_7/moving_mean"
+        s: "loc:@batch_normalization_8/moving_variance"
       }
     }
   }
@@ -49969,7 +49992,16 @@ node {
     value {
       shape {
         dim {
+          size: 3
+        }
+        dim {
+          size: 3
+        }
+        dim {
           size: 32
+        }
+        dim {
+          size: 1
         }
       }
     }
@@ -49978,7 +50010,7 @@ node {
 node {
   name: "Assign_13"
   op: "Assign"
-  input: "batch_normalization_7/moving_variance"
+  input: "separable_conv2d_6/depthwise_kernel"
   input: "Placeholder_13"
   attr {
     key: "T"
@@ -49990,7 +50022,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@batch_normalization_7/moving_variance"
+        s: "loc:@separable_conv2d_6/depthwise_kernel"
       }
     }
   }
@@ -50021,16 +50053,16 @@ node {
     value {
       shape {
         dim {
-          size: 3
+          size: 1
         }
         dim {
-          size: 3
+          size: 1
         }
         dim {
           size: 32
         }
         dim {
-          size: 1
+          size: 32
         }
       }
     }
@@ -50039,7 +50071,7 @@ node {
 node {
   name: "Assign_14"
   op: "Assign"
-  input: "separable_conv2d_5/depthwise_kernel"
+  input: "separable_conv2d_6/pointwise_kernel"
   input: "Placeholder_14"
   attr {
     key: "T"
@@ -50051,7 +50083,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@separable_conv2d_5/depthwise_kernel"
+        s: "loc:@separable_conv2d_6/pointwise_kernel"
       }
     }
   }
@@ -50082,15 +50114,6 @@ node {
     value {
       shape {
         dim {
-          size: 1
-        }
-        dim {
-          size: 1
-        }
-        dim {
-          size: 32
-        }
-        dim {
           size: 32
         }
       }
@@ -50100,7 +50123,7 @@ node {
 node {
   name: "Assign_15"
   op: "Assign"
-  input: "separable_conv2d_5/pointwise_kernel"
+  input: "separable_conv2d_6/bias"
   input: "Placeholder_15"
   attr {
     key: "T"
@@ -50112,7 +50135,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@separable_conv2d_5/pointwise_kernel"
+        s: "loc:@separable_conv2d_6/bias"
       }
     }
   }
@@ -50152,7 +50175,7 @@ node {
 node {
   name: "Assign_16"
   op: "Assign"
-  input: "separable_conv2d_5/bias"
+  input: "batch_normalization_9/gamma"
   input: "Placeholder_16"
   attr {
     key: "T"
@@ -50164,7 +50187,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@separable_conv2d_5/bias"
+        s: "loc:@batch_normalization_9/gamma"
       }
     }
   }
@@ -50204,7 +50227,7 @@ node {
 node {
   name: "Assign_17"
   op: "Assign"
-  input: "batch_normalization_8/gamma"
+  input: "batch_normalization_9/beta"
   input: "Placeholder_17"
   attr {
     key: "T"
@@ -50216,7 +50239,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@batch_normalization_8/gamma"
+        s: "loc:@batch_normalization_9/beta"
       }
     }
   }
@@ -50256,7 +50279,7 @@ node {
 node {
   name: "Assign_18"
   op: "Assign"
-  input: "batch_normalization_8/beta"
+  input: "batch_normalization_9/moving_mean"
   input: "Placeholder_18"
   attr {
     key: "T"
@@ -50268,7 +50291,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@batch_normalization_8/beta"
+        s: "loc:@batch_normalization_9/moving_mean"
       }
     }
   }
@@ -50308,7 +50331,7 @@ node {
 node {
   name: "Assign_19"
   op: "Assign"
-  input: "batch_normalization_8/moving_mean"
+  input: "batch_normalization_9/moving_variance"
   input: "Placeholder_19"
   attr {
     key: "T"
@@ -50320,7 +50343,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@batch_normalization_8/moving_mean"
+        s: "loc:@batch_normalization_9/moving_variance"
       }
     }
   }
@@ -50353,6 +50376,9 @@ node {
         dim {
           size: 32
         }
+        dim {
+          size: 4
+        }
       }
     }
   }
@@ -50360,7 +50386,7 @@ node {
 node {
   name: "Assign_20"
   op: "Assign"
-  input: "batch_normalization_8/moving_variance"
+  input: "dense_3/kernel"
   input: "Placeholder_20"
   attr {
     key: "T"
@@ -50372,7 +50398,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@batch_normalization_8/moving_variance"
+        s: "loc:@dense_3/kernel"
       }
     }
   }
@@ -50403,16 +50429,7 @@ node {
     value {
       shape {
         dim {
-          size: 3
-        }
-        dim {
-          size: 3
-        }
-        dim {
-          size: 32
-        }
-        dim {
-          size: 1
+          size: 4
         }
       }
     }
@@ -50421,436 +50438,8 @@ node {
 node {
   name: "Assign_21"
   op: "Assign"
-  input: "separable_conv2d_6/depthwise_kernel"
-  input: "Placeholder_21"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@separable_conv2d_6/depthwise_kernel"
-      }
-    }
-  }
-  attr {
-    key: "use_locking"
-    value {
-      b: false
-    }
-  }
-  attr {
-    key: "validate_shape"
-    value {
-      b: true
-    }
-  }
-}
-node {
-  name: "Placeholder_22"
-  op: "Placeholder"
-  attr {
-    key: "dtype"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        dim {
-          size: 1
-        }
-        dim {
-          size: 1
-        }
-        dim {
-          size: 32
-        }
-        dim {
-          size: 32
-        }
-      }
-    }
-  }
-}
-node {
-  name: "Assign_22"
-  op: "Assign"
-  input: "separable_conv2d_6/pointwise_kernel"
-  input: "Placeholder_22"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@separable_conv2d_6/pointwise_kernel"
-      }
-    }
-  }
-  attr {
-    key: "use_locking"
-    value {
-      b: false
-    }
-  }
-  attr {
-    key: "validate_shape"
-    value {
-      b: true
-    }
-  }
-}
-node {
-  name: "Placeholder_23"
-  op: "Placeholder"
-  attr {
-    key: "dtype"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        dim {
-          size: 32
-        }
-      }
-    }
-  }
-}
-node {
-  name: "Assign_23"
-  op: "Assign"
-  input: "separable_conv2d_6/bias"
-  input: "Placeholder_23"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@separable_conv2d_6/bias"
-      }
-    }
-  }
-  attr {
-    key: "use_locking"
-    value {
-      b: false
-    }
-  }
-  attr {
-    key: "validate_shape"
-    value {
-      b: true
-    }
-  }
-}
-node {
-  name: "Placeholder_24"
-  op: "Placeholder"
-  attr {
-    key: "dtype"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        dim {
-          size: 32
-        }
-      }
-    }
-  }
-}
-node {
-  name: "Assign_24"
-  op: "Assign"
-  input: "batch_normalization_9/gamma"
-  input: "Placeholder_24"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@batch_normalization_9/gamma"
-      }
-    }
-  }
-  attr {
-    key: "use_locking"
-    value {
-      b: false
-    }
-  }
-  attr {
-    key: "validate_shape"
-    value {
-      b: true
-    }
-  }
-}
-node {
-  name: "Placeholder_25"
-  op: "Placeholder"
-  attr {
-    key: "dtype"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        dim {
-          size: 32
-        }
-      }
-    }
-  }
-}
-node {
-  name: "Assign_25"
-  op: "Assign"
-  input: "batch_normalization_9/beta"
-  input: "Placeholder_25"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@batch_normalization_9/beta"
-      }
-    }
-  }
-  attr {
-    key: "use_locking"
-    value {
-      b: false
-    }
-  }
-  attr {
-    key: "validate_shape"
-    value {
-      b: true
-    }
-  }
-}
-node {
-  name: "Placeholder_26"
-  op: "Placeholder"
-  attr {
-    key: "dtype"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        dim {
-          size: 32
-        }
-      }
-    }
-  }
-}
-node {
-  name: "Assign_26"
-  op: "Assign"
-  input: "batch_normalization_9/moving_mean"
-  input: "Placeholder_26"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@batch_normalization_9/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "use_locking"
-    value {
-      b: false
-    }
-  }
-  attr {
-    key: "validate_shape"
-    value {
-      b: true
-    }
-  }
-}
-node {
-  name: "Placeholder_27"
-  op: "Placeholder"
-  attr {
-    key: "dtype"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        dim {
-          size: 32
-        }
-      }
-    }
-  }
-}
-node {
-  name: "Assign_27"
-  op: "Assign"
-  input: "batch_normalization_9/moving_variance"
-  input: "Placeholder_27"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@batch_normalization_9/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "use_locking"
-    value {
-      b: false
-    }
-  }
-  attr {
-    key: "validate_shape"
-    value {
-      b: true
-    }
-  }
-}
-node {
-  name: "Placeholder_28"
-  op: "Placeholder"
-  attr {
-    key: "dtype"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        dim {
-          size: 32
-        }
-        dim {
-          size: 4
-        }
-      }
-    }
-  }
-}
-node {
-  name: "Assign_28"
-  op: "Assign"
-  input: "dense_3/kernel"
-  input: "Placeholder_28"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@dense_3/kernel"
-      }
-    }
-  }
-  attr {
-    key: "use_locking"
-    value {
-      b: false
-    }
-  }
-  attr {
-    key: "validate_shape"
-    value {
-      b: true
-    }
-  }
-}
-node {
-  name: "Placeholder_29"
-  op: "Placeholder"
-  attr {
-    key: "dtype"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        dim {
-          size: 4
-        }
-      }
-    }
-  }
-}
-node {
-  name: "Assign_29"
-  op: "Assign"
   input: "dense_3/bias"
-  input: "Placeholder_29"
+  input: "Placeholder_21"
   attr {
     key: "T"
     value {
