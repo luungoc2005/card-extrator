@@ -1,6 +1,6 @@
 [
-    "jump_backward",
     "jump_forward",
     "look_through",
-    "move_to"
+    "move_to",
+    "jump_backward"
 ]
